@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ortho vs Perspective Demo</title>
+
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        #info {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body>
+
+<div id="info">
+    <h3>Orthographic vs Perspective</h3>
+
+    <button id="toggleBtn">
+        Switch to Orthographic
+    </button>
+
+    <p id="cameraType">
+        Current Camera: Perspective
+    </p>
+</div>
+
+<script type="importmap">
+{
+    "imports": {
+        "three": "https://unpkg.com/three@0.167.1/build/three.module.js"
+    }
+}
+</script>
+<script type="module" src="./OrthovsPerspective.js"></script>
+
+</body>
+</html>
